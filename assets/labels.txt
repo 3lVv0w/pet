@@ -1,0 +1,12 @@
+0 Big
+1 Black
+2 Brown
+3 Dwarf
+4 jinbao
+5 Roxxie
+6 Silver
+7 Small
+8 tall
+9 Tiny
+10 White
+11 Sanim
