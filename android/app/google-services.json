@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "291634912261",
+    "firebase_url": "https://owndog-29184.firebaseio.com",
+    "project_id": "owndog-29184",
+    "storage_bucket": "owndog-29184.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291634912261:android:213d4f8c34e8351930106c",
+        "android_client_info": {
+          "package_name": "com.example.own_dog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "291634912261-sef9jcdj2melg7fkrmstgekgjs8814cs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM4hgRNon8C0iSDk5HaYtbqbUkPOjltjI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "291634912261-sef9jcdj2melg7fkrmstgekgjs8814cs.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "291634912261-i4anubnmnb26ffnodaddm2efnqtk1kpr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ownDog"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
