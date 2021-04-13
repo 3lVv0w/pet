@@ -26,8 +26,8 @@ class _LoginPageState extends State<LoginPage> {
 
   Future<void> checkStatus(UserModel user) async {
     final User currentUser = firebaseAuth.currentUser;
-    user.updateUserId(currentUser?.uid);
     if (currentUser != null) {
+      user.updateUserId(currentUser?.uid);
       Navigator.of(context).push(
         MaterialPageRoute(
           builder: (BuildContext context) => MyHomePage(),

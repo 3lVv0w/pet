@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/services.dart';
@@ -8,6 +9,7 @@ import 'package:scoped_model/scoped_model.dart';
 class RegisterPage extends StatelessWidget {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   final FirebaseAuth firebaseAuth = FirebaseAuth.instance;
+  final FirebaseFirestore firestore = FirebaseFirestore.instance;
   static String nameString;
   static String emailString;
   static String passwordString;
@@ -43,6 +45,7 @@ class RegisterPage extends StatelessWidget {
     )
         .then((response) async {
       user.updateUserId(response.user.uid);
+
       Navigator.of(context).push(
         MaterialPageRoute(
           builder: (BuildContext context) => MyHomePage(),
