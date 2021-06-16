@@ -4,7 +4,7 @@ import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:own_dog/scoped_model/user_model.dart';
+import 'package:pet/scoped_model/user_model.dart';
 import 'package:scoped_model/scoped_model.dart';
 import 'package:uuid/uuid.dart';
 import 'package:toast/toast.dart';

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:own_dog/scoped_model/user_model.dart';
+import 'package:pet/scoped_model/user_model.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 class PasswordInputForm extends StatelessWidget {

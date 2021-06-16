@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:own_dog/scoped_model/user_model.dart';
-import 'package:own_dog/widgets/dog_card.dart';
+import 'package:pet/scoped_model/user_model.dart';
+import 'package:pet/widgets/dog_card.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 class ShowListDog extends StatelessWidget {

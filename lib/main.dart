@@ -1,6 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:own_dog/views/own_dog.dart';
+import 'package:pet/views/own_dog.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

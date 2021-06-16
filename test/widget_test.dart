@@ -7,7 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:own_dog/views/own_dog.dart';
+import 'package:pet/views/own_dog.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

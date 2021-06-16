@@ -2,8 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/services.dart';
-import 'package:own_dog/scoped_model/user_model.dart';
-import 'package:own_dog/views/pages/home_page.dart';
+import 'package:pet/scoped_model/user_model.dart';
+import 'package:pet/views/pages/home_page.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 class RegisterPage extends StatelessWidget {

@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'dart:collection';
-// import 'package:dio/dio.dart';
+
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:own_dog/scoped_model/user_model.dart';
+import 'package:pet/scoped_model/user_model.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 class DogMap extends StatefulWidget {
@@ -71,7 +71,7 @@ class _DogMapPageState extends State<DogMap> {
   }
 
   Future<void> _goToCollar() async {
-    final user = ScopedModel.of<UserModel>(context, rebuildOnChange: true);
+    final user = ScopedModel.of<UserModel>(context, rebuildOnChange: false);
     final GoogleMapController controller = await _controller.future;
     controller.animateCamera(
       CameraUpdate.newCameraPosition(
@@ -84,13 +84,12 @@ class _DogMapPageState extends State<DogMap> {
   }
 
   Future<void> _fetchdata() async {
-    final user = ScopedModel.of<UserModel>(context, rebuildOnChange: true);
+    final user = ScopedModel.of<UserModel>(context, rebuildOnChange: false);
     _petRef = database.reference().child('Pet');
     _petRef.keepSynced(true);
     _petSubscription = _petRef.onValue.listen((Event event) {
-      print(event.snapshot.value['Longtitude']);
-      user.updateLat(event.snapshot.value['Latitude']);
-      user.updateLng(event.snapshot.value['Longitude']);
+      user.updateLat(event.snapshot.value['Latitude'] ?? 0.0);
+      user.updateLng(event.snapshot.value['Longitude'] ?? 0.0);
     }, onError: (Object o) {
       final DatabaseError error = o;
       setState(() {
@@ -100,7 +99,7 @@ class _DogMapPageState extends State<DogMap> {
   }
 
   Future<void> _setMarkers() async {
-    final user = ScopedModel.of<UserModel>(context, rebuildOnChange: true);
+    final user = ScopedModel.of<UserModel>(context, rebuildOnChange: false);
     final String markerIdVal = 'marker_id_1';
     _markers.clear();
     setState(() {

@@ -1,11 +1,11 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
-import 'package:own_dog/scoped_model/user_model.dart';
-import 'package:own_dog/views/pages/home_page.dart';
-import 'package:own_dog/views/pages/register_page.dart';
-import 'package:own_dog/widgets/email_input_form.dart';
-import 'package:own_dog/widgets/password_input_form.dart';
+import 'package:pet/scoped_model/user_model.dart';
+import 'package:pet/views/pages/home_page.dart';
+import 'package:pet/views/pages/register_page.dart';
+import 'package:pet/widgets/email_input_form.dart';
+import 'package:pet/widgets/password_input_form.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 class LoginPage extends StatefulWidget {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:own_dog/views/pages/dog_map.dart';
-import 'package:own_dog/views/pages/profile_page.dart';
-import 'package:own_dog/widgets/show_list_dog.dart';
-import 'package:own_dog/widgets/add_list_dog.dart';
+import 'package:pet/views/pages/dog_map.dart';
+import 'package:pet/views/pages/profile_page.dart';
+import 'package:pet/widgets/show_list_dog.dart';
+import 'package:pet/widgets/add_list_dog.dart';
 
 import 'profile_page.dart';
 
@@ -94,7 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'OWN DOGS',
+          'PETS',
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontFamily: 'K2D',

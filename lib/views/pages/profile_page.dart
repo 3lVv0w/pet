@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:own_dog/views/pages/login_page.dart';
+import 'package:pet/views/pages/login_page.dart';
 import 'dart:io' show Platform;
 
 class ProfilePage extends StatefulWidget {

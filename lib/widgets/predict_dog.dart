@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:own_dog/models/dog.dart';
+import 'package:pet/models/dog.dart';
 import 'package:tflite/tflite.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
