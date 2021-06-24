@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:pet/scoped_model/user_model.dart';
 import 'package:scoped_model/scoped_model.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class DogMap extends StatefulWidget {
   @override
@@ -107,8 +108,14 @@ class _DogMapPageState extends State<DogMap> {
         Marker(
           markerId: MarkerId(markerIdVal),
           position: LatLng(user.lat ?? 0, user.lng ?? 0),
+          onTap: () => _launchURL(user.lat ?? 0, user.lng ?? 0),
         ),
       );
     });
   }
+
+  void _launchURL(num lat, num lng) async =>
+      await canLaunch('https://www.google.com/maps/@$lat,$lng,15z')
+          ? await launch('https://www.google.com/maps/@$lat,$lng,15z')
+          : throw 'Could not launch';
 }
